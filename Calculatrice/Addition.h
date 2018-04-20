@@ -14,16 +14,19 @@
 #ifndef ADDITION_H
 #define ADDITION_H
 
-class Addition {
+#include "Operation.h"
+
+class Addition : public Operation
+{
 protected:
-    Expression _operandeG;
-    Expression _operandeD;
+    Expression* _operandeG;
+    Expression* _operandeD;
 public:
-    Addition();
+    Addition(Expression* e1, Expression* e2);
     Addition(const Addition& orig);
     virtual ~Addition();
     
-    void calculer();
+    float calculer();
     void afficher();
     void afficher_npi();
 private:

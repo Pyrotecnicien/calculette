@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/Addition.o \
+	${OBJECTDIR}/Constante.o \
 	${OBJECTDIR}/Expression.o \
 	${OBJECTDIR}/Operation.o \
 	${OBJECTDIR}/main.o
@@ -69,6 +70,11 @@ ${OBJECTDIR}/Addition.o: Addition.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Addition.o Addition.cpp
+
+${OBJECTDIR}/Constante.o: Constante.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Constante.o Constante.cpp
 
 ${OBJECTDIR}/Expression.o: Expression.cpp
 	${MKDIR} -p ${OBJECTDIR}

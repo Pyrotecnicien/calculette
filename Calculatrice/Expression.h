@@ -18,7 +18,7 @@ class Expression {
 public:
     Expression();
     Expression(const Expression& orig);
-    virtual void calculer()=0;
+    virtual float calculer()=0;
     virtual void afficher()=0;
     virtual void afficher_npi()=0;
     

@@ -12,9 +12,13 @@
  */
 
 #include "Addition.h"
+#include <iostream>
+using namespace std;
 
-Addition::Addition(Expression e1, Expression e2) {
-    _operandeG = e1; _operandeD = e2; 
+
+Addition::Addition(Expression* e1, Expression* e2) {
+    _operandeG = e1;
+    _operandeD = e2; 
 }
 
 Addition::Addition(const Addition& orig) {
@@ -23,7 +27,12 @@ Addition::Addition(const Addition& orig) {
 Addition::~Addition() {
 }
 
-void Operation::calculer(){}
-void Operation::afficher(){}
-void Operation::afficher_npi(){}
+float Addition::calculer() {
+    return _operandeG->calculer() + _operandeD->calculer();
+}
+
+void Addition::afficher(){
+    cout << calculer() << endl;
+}
+void Addition::afficher_npi(){}
 

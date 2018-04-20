@@ -5,21 +5,23 @@
  */
 
 /* 
- * File:   Expression.cpp
+ * File:   Constante.cpp
  * Author: joris.lacroix
  * 
- * Created on 20 avril 2018, 14:47
+ * Created on 20 avril 2018, 15:04
  */
 
-#include "Expression.h"
+#include "Constante.h"
 #include <iostream>
 using namespace std;
 
-Expression::Expression() {
+Constante::Constante(float c) {
+    _constante = c;
 }
 
-Expression::Expression(const Expression& orig) {
+Constante::Constante(const Constante& orig) {
 }
 
-Expression::~Expression() {
+Constante::~Constante() {
 }
+

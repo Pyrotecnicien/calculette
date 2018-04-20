@@ -5,6 +5,7 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>Addition.h</itemPath>
+      <itemPath>Constante.h</itemPath>
       <itemPath>Expression.h</itemPath>
       <itemPath>Operation.h</itemPath>
     </logicalFolder>
@@ -16,6 +17,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>Addition.cpp</itemPath>
+      <itemPath>Constante.cpp</itemPath>
       <itemPath>Expression.cpp</itemPath>
       <itemPath>Operation.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
@@ -45,6 +47,10 @@
       <item path="Addition.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Addition.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Constante.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Constante.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Expression.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -80,6 +86,10 @@
       <item path="Addition.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Addition.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Constante.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Constante.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Expression.cpp" ex="false" tool="1" flavor2="0">
       </item>

@@ -14,7 +14,9 @@
 #ifndef OPERATION_H
 #define OPERATION_H
 
-class Operation {
+#include "Expression.h"
+
+class Operation:public Expression {
 public:
     Operation();
     Operation(const Operation& orig);
