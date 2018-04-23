@@ -49,10 +49,10 @@ int main(int argc, char** argv) {
     int i=0;
     while(i<tailleTab){
         if (regex_match(tab[i], regex{"[+-]?([0-9]*[.])?[0-9]+"})==1){
-            tabConstante[tailleConstante]=new Constante(stoi( tab[i]));
+            tabConstante[tailleConstante]=new Constante(stof( tab[i]));
             tailleConstante+=1;
             if (regex_match(tab[i+1], regex{"[+-]?([0-9]*[.])?[0-9]+"})==1){
-                tabConstante[tailleConstante]=new Constante(stoi( tab[i+1]));
+                tabConstante[tailleConstante]=new Constante(stof( tab[i+1]));
                 tailleConstante+=1;
                 if (regex_match(tab[i+2], regex{"^[/+*-]$"})==1){
                     switch (tab[i+2].c_str()[0]){
