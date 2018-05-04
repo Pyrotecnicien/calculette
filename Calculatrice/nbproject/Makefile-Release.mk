@@ -37,8 +37,11 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/Addition.o \
 	${OBJECTDIR}/Constante.o \
+	${OBJECTDIR}/Division.o \
 	${OBJECTDIR}/Expression.o \
+	${OBJECTDIR}/Multiplication.o \
 	${OBJECTDIR}/Operation.o \
+	${OBJECTDIR}/Soustraction.o \
 	${OBJECTDIR}/main.o
 
 
@@ -76,15 +79,30 @@ ${OBJECTDIR}/Constante.o: Constante.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Constante.o Constante.cpp
 
+${OBJECTDIR}/Division.o: Division.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Division.o Division.cpp
+
 ${OBJECTDIR}/Expression.o: Expression.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Expression.o Expression.cpp
 
+${OBJECTDIR}/Multiplication.o: Multiplication.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Multiplication.o Multiplication.cpp
+
 ${OBJECTDIR}/Operation.o: Operation.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Operation.o Operation.cpp
+
+${OBJECTDIR}/Soustraction.o: Soustraction.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Soustraction.o Soustraction.cpp
 
 ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}

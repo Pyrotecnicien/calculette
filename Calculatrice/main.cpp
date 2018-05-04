@@ -17,6 +17,10 @@ using namespace std;
 #include <string>
 #include "Constante.h"
 #include "Addition.h"
+#include "Soustraction.h"
+#include "Division.h"
+#include "Multiplication.h"
+
 
 /*
  * 

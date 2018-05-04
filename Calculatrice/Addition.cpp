@@ -34,5 +34,7 @@ float Addition::calculer() {
 void Addition::afficher(){
     cout << calculer() << endl;
 }
-void Addition::afficher_npi(){}
+void Addition::afficher_npi(){
+    //cout << 
+}
 

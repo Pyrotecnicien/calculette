@@ -6,8 +6,11 @@
                    projectFiles="true">
       <itemPath>Addition.h</itemPath>
       <itemPath>Constante.h</itemPath>
+      <itemPath>Division.h</itemPath>
       <itemPath>Expression.h</itemPath>
+      <itemPath>Multiplication.h</itemPath>
       <itemPath>Operation.h</itemPath>
+      <itemPath>Soustraction.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -18,8 +21,11 @@
                    projectFiles="true">
       <itemPath>Addition.cpp</itemPath>
       <itemPath>Constante.cpp</itemPath>
+      <itemPath>Division.cpp</itemPath>
       <itemPath>Expression.cpp</itemPath>
+      <itemPath>Multiplication.cpp</itemPath>
       <itemPath>Operation.cpp</itemPath>
+      <itemPath>Soustraction.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -52,13 +58,25 @@
       </item>
       <item path="Constante.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Division.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Division.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Expression.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Expression.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Multiplication.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Multiplication.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Operation.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Operation.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Soustraction.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Soustraction.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -91,13 +109,25 @@
       </item>
       <item path="Constante.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Division.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Division.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Expression.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Expression.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Multiplication.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Multiplication.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="Operation.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Operation.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Soustraction.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Soustraction.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
