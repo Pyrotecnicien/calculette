@@ -15,8 +15,18 @@
 #include <iostream>
 using namespace std;
 
-Constante::Constante(float c) {
+Constante::Constante(float c, float x, float y) {
     _constante = c;
+}
+Constante::Constante(char valeur, float x, float y) {
+    switch (valeur){
+        case 'x':
+            _constante = x;
+            break;
+        case 'y':
+            _constante = y;
+            break;
+    }
 }
 
 Constante::Constante(const Constante& orig) {

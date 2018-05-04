@@ -22,7 +22,8 @@ class Constante : public Expression {
     protected:
         float _constante;
 public:
-    Constante( float c);
+    Constante( float c, float x, float y);
+    Constante( char c, float x, float y);
     Constante(const Constante& orig);
     virtual ~Constante();
     float calculer(){return _constante;}

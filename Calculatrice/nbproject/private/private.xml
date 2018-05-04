@@ -7,7 +7,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/D:/Documents/C++/calculette/Calculatrice/Expression.h</file>
+            <file>file:/D:/Documents/C++/calculette/Calculatrice/Addition.h</file>
+            <file>file:/D:/Documents/C++/calculette/Calculatrice/Constante.h</file>
+            <file>file:/D:/Documents/C++/calculette/Calculatrice/Operation.cpp</file>
             <file>file:/D:/Documents/C++/calculette/Calculatrice/main.cpp</file>
+            <file>file:/D:/Documents/C++/calculette/Calculatrice/Constante.cpp</file>
+            <file>file:/D:/Documents/C++/calculette/Calculatrice/Expression.cpp</file>
+            <file>file:/D:/Documents/C++/calculette/Calculatrice/Addition.cpp</file>
+            <file>file:/D:/Documents/C++/calculette/Calculatrice/Operation.h</file>
         </group>
     </open-files>
 </project-private>
