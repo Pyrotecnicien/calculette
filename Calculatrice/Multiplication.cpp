@@ -12,13 +12,29 @@
  */
 
 #include "Multiplication.h"
+#include <iostream>
+using namespace std;
 
-Multiplication::Multiplication() {
+
+Multiplication::Multiplication(Expression* e1, Expression* e2) {
+    _operandeG = e1;
+    _operandeD = e2; 
 }
 
 Multiplication::Multiplication(const Multiplication& orig) {
 }
 
 Multiplication::~Multiplication() {
+}
+
+float Multiplication::calculer() {
+    return _operandeG->calculer() * _operandeD->calculer();
+}
+
+void Multiplication::afficher(){
+    cout << calculer() << endl;
+}
+void Multiplication::afficher_npi(){
+    //cout << 
 }
 

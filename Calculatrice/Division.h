@@ -15,11 +15,19 @@
 #define DIVISION_H
 #include "Operation.h"
 
-class Division {
+class Division : public Operation
+{
+protected:
+    Expression* _operandeG;
+    Expression* _operandeD;
 public:
-    Division();
+    Division(Expression* e1, Expression* e2);
     Division(const Division& orig);
     virtual ~Division();
+    
+    float calculer();
+    void afficher();
+    void afficher_npi();
 private:
 
 };
