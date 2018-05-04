@@ -39,8 +39,8 @@ int main(int argc, char** argv) {
         if (c != "y" && c != "n" && c != "Y" && c != "N") {
             cout << c << endl;
             cout << "veuillez entrer une lettre valide (y ou n), double entrée pour valider" << endl;
-        } else
-            cout << c << endl;
+        } //else
+            //cout << c << endl;
     }
     if (c == "y" || c == "Y") {
         string variable;
@@ -78,7 +78,7 @@ int main(int argc, char** argv) {
         cin >> c;
         if (c != "q" && c != "Q") {
             tab[tailleTab] = c;
-            cout << c << endl;
+            //cout << c << endl;
             tailleTab++;
         }
     }
@@ -131,19 +131,20 @@ int main(int argc, char** argv) {
 
                 switch (tab[i + 1].c_str()[0]) {
                     case '+':
-                            tabOperation[tailleOperation] = new Addition(tabConstante[tailleConstante - 2], tabConstante[tailleConstante - 1]);
+                            tabOperation[tailleOperation] = new Addition(tabOperation[tailleOperation - 1], tabConstante[tailleConstante - 1]);
                             tailleOperation += 1;
                             break;
                         case '-':
-                            tabOperation[tailleOperation] = new Soustraction(tabConstante[tailleConstante - 2], tabConstante[tailleConstante - 1]);
+                            tabOperation[tailleOperation] = new Soustraction(tabOperation[tailleOperation - 1], tabConstante[tailleConstante - 1]);
                             tailleOperation += 1;
+                       
                             break;
                         case '*':
-                            tabOperation[tailleOperation] = new Multiplication(tabConstante[tailleConstante - 2], tabConstante[tailleConstante - 1]);
+                            tabOperation[tailleOperation] = new Multiplication(tabOperation[tailleOperation - 1], tabConstante[tailleConstante - 1]);
                             tailleOperation += 1;
                             break;
                         case '/':
-                            tabOperation[tailleOperation] = new Division(tabConstante[tailleConstante - 2], tabConstante[tailleConstante - 1]);
+                            tabOperation[tailleOperation] = new Division(tabOperation[tailleOperation - 1], tabConstante[tailleConstante - 1]);
                             tailleOperation += 1;
                             break;
                 }
@@ -187,19 +188,19 @@ int main(int argc, char** argv) {
         } else if (regex_match(tab[i], regex{"^[/+*-]$"}) == 1) {
             switch (tab[i].c_str()[0]) {
                 case '+':
-                    tabOperation[tailleOperation] = new Addition(tabConstante[tailleConstante - 2], tabConstante[tailleConstante - 1]);
+                    tabOperation[tailleOperation] = new Addition(tabOperation[tailleConstante - 1], tabOperation[tailleOperation - 2]);
                     tailleOperation += 1;
                     break;
                 case '-':
-                    tabOperation[tailleOperation] = new Soustraction(tabConstante[tailleConstante - 2], tabConstante[tailleConstante - 1]);
+                    tabOperation[tailleOperation] = new Soustraction(tabOperation[tailleConstante - 1], tabOperation[tailleOperation - 2]);
                     tailleOperation += 1;
                     break;
                 case '*':
-                    tabOperation[tailleOperation] = new Multiplication(tabConstante[tailleConstante - 2], tabConstante[tailleConstante - 1]);
+                    tabOperation[tailleOperation] = new Multiplication(tabOperation[tailleConstante - 1], tabOperation[tailleOperation - 2]);
                     tailleOperation += 1;
                     break;
                 case '/':
-                    tabOperation[tailleOperation] = new Division(tabConstante[tailleConstante - 2], tabConstante[tailleConstante - 1]);
+                    tabOperation[tailleOperation] = new Division(tabOperation[tailleConstante - 1], tabOperation[tailleOperation - 2]);
                     tailleOperation += 1;
                     break;
             }
@@ -243,19 +244,19 @@ int main(int argc, char** argv) {
 
                 switch (tab[i + 1].c_str()[0]) {
                     case '+':
-                    tabOperation[tailleOperation] = new Addition(tabConstante[tailleConstante - 2], tabConstante[tailleConstante - 1]);
+                    tabOperation[tailleOperation] = new Addition(tabOperation[tailleOperation - 1], tabConstante[tailleConstante - 1]);
                     tailleOperation += 1;
                     break;
                 case '-':
-                    tabOperation[tailleOperation] = new Soustraction(tabConstante[tailleConstante - 2], tabConstante[tailleConstante - 1]);
+                    tabOperation[tailleOperation] = new Soustraction(tabOperation[tailleOperation - 1], tabConstante[tailleConstante - 1]);
                     tailleOperation += 1;
                     break;
                 case '*':
-                    tabOperation[tailleOperation] = new Multiplication(tabConstante[tailleConstante - 2], tabConstante[tailleConstante - 1]);
+                    tabOperation[tailleOperation] = new Multiplication(tabOperation[tailleOperation - 1], tabConstante[tailleConstante - 1]);
                     tailleOperation += 1;
                     break;
                 case '/':
-                    tabOperation[tailleOperation] = new Division(tabConstante[tailleConstante - 2], tabConstante[tailleConstante - 1]);
+                    tabOperation[tailleOperation] = new Division(tabOperation[tailleOperation - 1], tabConstante[tailleConstante - 1]);
                     tailleOperation += 1;
                     break;
                 }

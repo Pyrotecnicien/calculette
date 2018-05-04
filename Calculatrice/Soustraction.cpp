@@ -31,7 +31,7 @@ void Soustraction::afficher(){
 }
 
 float Soustraction::calculer() {
-    return _operandeG->calculer() + _operandeD->calculer();
+    return _operandeG->calculer() - _operandeD->calculer();
 }
 
 void Soustraction::afficher_npi(){}
